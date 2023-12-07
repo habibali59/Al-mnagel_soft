@@ -1,0 +1,98 @@
+.welcome-img {
+    max-width: 100%;
+    display: flex;
+    width: 1440px;
+    height: 700px;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+}
+
+.welcome-title {
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    right: 109px;
+    top: 90px;
+    width: 665px;
+    height: 138px;
+}
+
+.player-coach {
+    display: flex;
+    width: 975px;
+    align-items: flex-start;
+    gap: 235px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin-top: 120px;
+
+}
+
+.c-1 {
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: center;
+    width: 270px;
+}
+
+.description {
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.266px;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.40));
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39x;
+    position: absolute;
+    top: 195%;
+    left: 70%;
+    transform: translate(-75%, 0%);
+    margin-top: 105px;
+}
+
+.head-title {
+
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 117px;
+}
+
+.c-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
