@@ -1,0 +1,11 @@
+.footer {
+    width: 1175px;
+    height: 184px;
+    flex-shrink: 0;
+}
+
+.line {
+    width: 1212.001px;
+    height: 3px;
+    background-color: #000;
+}
