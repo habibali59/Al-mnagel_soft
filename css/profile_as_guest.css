@@ -1,0 +1,28 @@
+.photo-container {
+    display: flex;
+    margin-left: 170px;
+    margin-top: 37px;
+
+}
+
+.photo {
+    width: 172px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 90px;
+    margin-left: 400px;
+    font-size: 30px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 287px;
+}
+.s-details {
+    width: 230px;
+}

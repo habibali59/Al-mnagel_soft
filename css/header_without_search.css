@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 132px;
+    
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}

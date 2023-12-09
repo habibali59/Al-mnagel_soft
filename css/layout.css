@@ -6,6 +6,13 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
 }
 
+.logo {
+    display: flex;
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 button {
     color: #000 ;
     text-align: center;
@@ -16,8 +23,34 @@ button {
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
     background: #D7EDFF;
+    border-radius: 15px;
+    border: none;
+    
 }
 a {
     text-decoration: none;
     color: #000;
+}
+img {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.40));
+}
+input {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+    background: #E5FFD0;
+}
+input[type] {
+    font-family: M PLUS Code Latin;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type]:focus{
+    outline: none;
+}
+select {
+    font-family: M PLUS Code Latin;
+    padding-left: 5px;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+    background: #E5FFD0;
 }

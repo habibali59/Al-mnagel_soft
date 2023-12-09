@@ -5,14 +5,6 @@
     margin: 14px 132px;
 }
 
-
-.logo {
-    display: flex;
-    font-size: 26px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
 .account {
     display: flex;
     gap: 25px;

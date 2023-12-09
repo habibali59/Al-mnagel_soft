@@ -1,0 +1,68 @@
+.photo-container {
+    display: flex;
+    margin-left: 170px;
+    margin-top: 37px;
+
+}
+
+.photo {
+    width: 172px;
+}
+
+.info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 92px;
+    margin-left: 400px;
+}
+
+
+
+.field {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    gap: 300px;
+}
+
+.field-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-edit {
+    display: flex;
+    align-items: center;
+}
+.text {
+    margin: 0px;
+    margin-left: 12px;
+    font-size: 14px;
+    
+}
+.info-input {
+    border-radius: 18px;
+    width: 180px;
+    height: 40px;
+    border: 0px solid;
+    font-size: 16px;
+}
+#list {
+    width: 195px;
+}
+.edit-icon {
+    margin-left: -25px;
+}
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin-left: 500px;
+    margin-top: 70px;
+}
+.button {
+    width: 80px;
+    height: 48px;
+    border-radius: 15px;
+    font-size: 15px;
+}
