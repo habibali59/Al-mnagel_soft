@@ -1,0 +1,114 @@
+
+
+    body {
+        font-family: M PLUS Code Latin;
+        background-color: rgba(244, 245, 255, 1);
+    }
+
+    header {
+        background-color: rgba(244, 245, 255, 1);
+        color: #000000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+
+    }
+
+
+    .container {
+        background-color: rgba(244, 245, 255, 1);
+        max-width: 600px;
+        margin: 99px auto;
+        padding: 20px;
+        border-radius: 20px;
+        ;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #E5FFD0;
+        border-radius: 5px;
+    }
+
+
+
+
+    #about-us {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 18px;
+        color: #888;
+    }
+
+    button {
+        
+        padding: 9px;
+        background-color: #D7EDFF;
+        color: #E5FFD0;
+        border: none;
+        
+        cursor: pointer;
+    }
+
+    
+
+    button {
+        width: 15%;
+        font-size: 15px;
+        padding: 9px;
+        color: #000000;
+        font-weight: 800;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+    }
+
+    button:focus,
+    button:hover {
+        color: #fff;
+    }
+
+    button:focus:after,
+    button:hover:after {
+        width: 5%;
+        left: 0%;
+    }
+
+    button:after {
+        content: "";
+        pointer-events: none;
+        bottom: -2px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: width, left;
+    }

@@ -1,5 +1,5 @@
 body {
-    color:  #000;
+    color: #000;
     background-color: #F4F5FF;
     font-family: 'M PLUS Code Latin', monospace;
     margin: 0px;
@@ -14,7 +14,7 @@ body {
 }
 
 button {
-    color: #000 ;
+    color: #000;
     text-align: center;
     font-family: M PLUS Code Latin;
     font-size: 20px;
@@ -25,28 +25,64 @@ button {
     background: #D7EDFF;
     border-radius: 15px;
     border: none;
-    
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
 }
+
+button:focus,
+button:hover {
+    color: #fff;
+}
+
+button:focus:after,
+button:hover:after {
+    width: 5%;
+    left: 0%;
+}
+
+button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+button:hover {
+    background-color: #4B6587;
+}
+
 a {
     text-decoration: none;
     color: #000;
 }
+
 img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.40));
 }
+
 input {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
     background: #E5FFD0;
 }
+
 input[type] {
     font-family: M PLUS Code Latin;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-input[type]:focus{
+input[type]:focus {
     outline: none;
 }
+
 select {
     font-family: M PLUS Code Latin;
     padding-left: 5px;
