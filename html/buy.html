@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Subscription</title>
+    <link rel="stylesheet" href="../css/buy.css">
+    
+</head>
+
+<body>
+    <header>
+  
+        <nav>
+          <ul>
+         
+            <li style="font-size: 24px;"><a href="#"> Coach Hub</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <!-- Course information box -->
+        <div class="course-info-box">
+            <p>Course Selected: Nutritional Courses</p>
+            <!-- You can add more course details here if needed -->
+        
+
+        <!-- Stanford Introduction to Food and Health Course Card -->
+        <div class="course-card">
+            <img class="course-image" src="../img/pf1.jpg" alt="Stanford Introduction to Food and Health">
+            <div class="course-details">
+                <h2>Stanford Introduction to Food and Health</h2>
+                <p>
+                    Stanford Introduction to Food and Health is a free online course offered by Stanford University through the platform Coursera. The course provides an introduction to the fundamentals of nutrition, food safety, and health, with a focus on evidence-based research and practical knowledge.
+                </p>
+            </div>
+        </div>
+      </div>
+
+        <!-- Payment method options -->
+        <div class="payment-options">
+            <label>
+                <input type="radio" name="paymentMethod" value="creditCard" checked onclick="showCreditCard()">
+                Credit Card
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="zainCash" onclick="showAdditionalFields()">
+                Zain Cash
+            </label>
+            <label>
+                <input type="radio" name="paymentMethod" value="fastPay" onclick="showAdditionalFields()">
+                Fast Pay
+            </label>
+        </div>
+
+        <!-- Additional fields for Zain Cash and Fast Pay -->
+        <div class="additional-fields">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter numbers " required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <!-- Course Selection Form -->
+       
+            <!-- Hidden input for the selected course -->
+            
+            <input type="hidden" id="course" name="course" value="nutritionalCourses">
+            <div   class="credit_card-fields">
+          
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city">
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" placeholder="Enter numbers only" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="cardNumber">Credit Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+             </div>
+            <button type="submit"> Payment & Enroll</button>
+       
+    </div>
+
+    <script>
+      function showCreditCard() {
+  document.querySelector('.credit_card-fields').style.display = 'block';
+  document.querySelector('.additional-fields').style.display = 'none';
+  document.querySelector('.payment-options_label[for="creditCard"]').classList.add('selected');
+  document.querySelector('.payment-options_label[for="zainCash"]').classList.remove('selected');
+  document.querySelector('.payment-options_label[for="fastPay"]').classList.remove('selected');
+}
+
+function showAdditionalFields() {
+  document.querySelector('.additional-fields').style.display = 'block';
+  document.querySelector('.credit_card-fields').style.display = 'none';
+  document.querySelector('.payment-options_label[for="zainCash"]').classList.add('selected');
+  document.querySelector('.payment-options_label[for="creditCard"]').classList.remove('selected');
+  document.querySelector('.payment-options_label[for="fastPay"]').classList.remove('selected');
+}
+    </script>
+    <hr style=" width: 70%;height: 1px; background-color: black;">
+    <div id="about-us">
+        <p>About Us: Discover the story behind Coach Hub and our mission to connect coaches and players worldwide.</p>
+      </div>
+</body>
+
+</html>

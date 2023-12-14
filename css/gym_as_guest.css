@@ -1,0 +1,108 @@
+
+.gym__rating {
+    display: flex;
+    margin-left: 135px;
+    gap: 400px;
+    margin-top: 100px;
+}
+
+.gym_info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.gym_name {
+    display: flex;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.rating_container {
+    display: flex;
+    margin-top: 50px;
+    padding: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: #D7EDFF;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.rating_head {
+    display: flex;
+    gap: 237px;
+    position: absolute;
+    top: 0;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 132px;
+}
+
+.text {
+    display: flex;
+    width: 320px;
+    height: 81px;
+    padding: 10px;
+    align-items: center;
+    background: #D9D9D9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.rate {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.show_more {
+    font-size: 14px;
+    text-decoration-line: underline;
+}
+
+.photos {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo {
+    width: 330px;
+    height: 300px;
+    border-radius: 15px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40);
+    margin-top: 50px;
+}

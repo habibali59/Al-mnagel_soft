@@ -1,0 +1,191 @@
+
+
+      
+        body {
+            font-family: "M PLUS Code Latin", sans-serif;
+            background-color: #F4F5FF;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.5s ease; 
+        }
+
+        header {
+          background-color:rgba(244, 245, 255, 1);
+          color: #000000;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        
+        nav ul {
+          list-style-type: none;
+        }
+        
+        nav ul li {
+          display: inline;
+          margin-right: 15px;
+        }
+        
+        nav ul li a {
+          color: #000000;
+          text-decoration: none;
+         
+        }
+
+        .container {
+            background-color: rgba(244, 245, 255, 1);
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px 40px;
+            border-radius: 20px;
+            transition: background-color 0.5s ease; /* Adding background color transition */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .course-info-box {
+            background-color: #D7EDFF;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            transition: opacity 0.5s ease; /* Adding opacity transition */
+        }
+
+        label {
+            margin-bottom: 10px;
+           
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 0px solid #ffffff;
+            border-radius: 5px;
+            background-color: #E5FFD0;
+
+           
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #D7EDFF;
+            color: #000000;
+            border-radius: 5px;
+        }
+
+        /* Style for course cards */
+        .course-card {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .course-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .course-details {
+            padding: 15px;
+        }
+
+        /* Payment method options */
+        .payment-options {
+          display: flex;
+          gap: 15px;
+          margin-bottom: 20px;
+        }
+        
+        .payment-options label {
+          position: relative;
+          cursor: pointer;
+        }
+        
+        .payment-options input[type="radio"] {
+          display: none;
+        }
+        
+        /* Radio button animation */
+        .payment-options input[type="radio"] + span {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          border: 2px solid #ccc;
+          border-radius: 50%;
+          transition: all 0.3s ease;
+        }
+        
+        .payment-options input[type="radio"]:checked + span {
+          background-color: #D7EDFF;
+          border-color: #D7EDFF;
+          transform: scale(1.2);
+        }
+        .payment-options label {
+  display: flex;
+  align-items: center;
+  
+  font-size: 16px;
+  color: #000000;
+}
+
+.payment-options label:hover {
+  color: #D7EDFF;
+}
+
+.payment-options label span {
+  margin-right: 5px;
+}
+
+        /* Additional fields for Zain Cash and Fast Pay */
+        .additional-fields {
+            display:none;
+            transition: opacity 0.5s ease; /* Adding opacity transition */
+           
+
+        }
+
+        .additional-fields label,
+        .additional-fields input {
+            margin-bottom: 10px;
+            display:block;
+        }
+        .credit_card-fields {
+            display:none;
+            transition: opacity 0.5s ease; /* Adding opacity transition */
+           
+
+        }
+
+        .credit_card-fields label,
+        .credit_card-fields input {
+
+            margin-bottom: 10px;
+            display:block;
+        }
+        #about-us {
+          text-align: center;
+          margin-top: 40px;
+          font-size: 18px;
+          color: #888;
+        }
+        .payment-options label.selected {
+          color: #D7EDFF;
+          font-weight: bold;
+        }
+        .payment-options_label.selected {
+          color: #D7EDFF;
+          font-weight: bold;
+        }
